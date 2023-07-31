@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Indie+Flower&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <link rel="icon" type="image/ico" href="/icon2.png">
+    <script>
+        function toSnacks() {
+            window.location.href = "snacks.html";
+        }
+        function toMainCourse() {
+            window.location.href = "main_course.html";
+        }
+        function toDrinks() {
+            window.location.href = "dessert.html";
+        }
+        function showCart() {
+            window.location.href = "cart.html"
+        }
+    </script>
+</head>
+
+<body>
+    <p class="login_head" align="right">
+        <button id="login" onclick="showCart()" style="background-color: #ecf4e3;">SHOW CART/PLACE ORDER</button>
+       </p>
+    
+    <center>
+        <p id="heading">Foodies Paradise</p>
+    </center>
+
+
+    <h1 align="center"><span><img src="/icon2.png"></span> OUR MENU <span><img src="/icon2.png"></span></h1>
+
+
+    <div class="menu" align="center">
+        <div id="snack_div" onClick="toSnacks()">
+            <p style="background-color: #32502E; font-family: 'Indie Flower', cursive;">SNACKS</p>
+        </div>
+        <div id="main_course_div" onClick="toMainCourse()">
+            <p style="background-color: #32502E; font-family: 'Indie Flower', cursive;">MAIN COURSE</p>
+        </div>
+        <div id="drinks_div" onClick="toDrinks()">
+            <p style="background-color: #32502E; font-family: 'Indie Flower', cursive;">DESSERTS</p>
+        </div>
+    </div>
+
+    <br>
+    <div id="order">
+
+        <h2>Order for<br>
+        Home-Delivered Smiles<br></h2>
+        We deliver to your doorstep
+
+        Our Delivery allows you to experience delicious food from the comfort of
+        your sofa at home or cubicle in office. All orders are delivered quickly and efficiently,
+        allowing you the peace of mind to know that smiles-inducing food is never too far.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio, reiciendis voluptates placeat, nihil explicabo aspernatur ut pariatur accusamus accusantium animi atque veritatis!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dicta harum, rem quo quis quidem animi.
+    </div>
+
+    
+
+
+
+    <footer class="top">
+        <p align="right">Order Online +919910052888</p>
+    </footer>
+</body>
+
+</html>
